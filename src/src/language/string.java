@@ -13,9 +13,10 @@ public class string {
         System.out.println(s);
         System.out.println(s1);
 
-//        compare();
-
+//      compare();
         get();
+        replace();
+
     }
 
 
@@ -34,6 +35,7 @@ public class string {
         System.out.println("abc".equals(a));
         System.out.println("abc".equalsIgnoreCase("ABC"));
     }
+
     public static void get(){
         String s = "Hello";
         String str = "World";
@@ -44,5 +46,19 @@ public class string {
         System.out.println(S.indexOf("lo"));
         System.out.println(S.substring(2,6));
 
+    }
+
+    public static void replace(){
+        String s = "How do you do";
+
+        //替换指定字符
+        String s1 = s.replace("o","8");
+        System.out.println(s1);
+
+        //按指定符号分割
+        String [] arr = s.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }
