@@ -10,17 +10,19 @@ public class Employee{
         this.name = name;
     }
     // 设置age的值
-    public void empAge(int empAge){
-        age =  empAge;
+
+    public void setAge(int age) {
+        this.age = age;
     }
-    /* 设置designation的值*/
-    public void empDesignation(String empDesig){
-        designation = empDesig;
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
-    /* 设置salary的值*/
-    public void empSalary(double empSalary){
-        salary = empSalary;
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
+
     /* 打印信息 */
     public void printEmployee(){
         System.out.println("名字:"+ name );

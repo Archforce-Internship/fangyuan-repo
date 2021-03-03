@@ -8,14 +8,14 @@ public class EmployeeTest{
         Employee empTwo = new Employee("RUNOOB2");
 
         // 调用这两个对象的成员方法
-        empOne.empAge(26);
-        empOne.empDesignation("高级程序员");
-        empOne.empSalary(1000);
+        empOne.setAge(26);
+        empOne.setDesignation("高级程序员");
+        empOne.setSalary(1000);
         empOne.printEmployee();
 
-        empTwo.empAge(21);
-        empTwo.empDesignation("菜鸟程序员");
-        empTwo.empSalary(500);
+        empTwo.setAge(21);
+        empTwo.setDesignation("菜鸟程序员");
+        empTwo.setSalary(500);
         empTwo.printEmployee();
 
         int a=129;
