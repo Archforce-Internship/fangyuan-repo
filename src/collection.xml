@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="stu" class="spring.collections">
+    <property name="arr">
+        <array>
+            <value>java程序设计</value>
+            <value>c++程序设计</value>
+        </array>
+    </property>
+    <property name="list">
+        <list>
+            <value>王老师</value>
+            <value>刘老师</value>
+        </list>
+    </property>
+    <property name="maps">
+        <map>
+            <entry key="23" value="勒布朗"></entry>
+            <entry key="24" value="kobe"></entry>
+        </map>
+    </property>
+    <property name="set">
+        <set>
+            <value>骑士</value>
+            <value>湖人</value>
+        </set>
+    </property>
+</bean>
+</beans>

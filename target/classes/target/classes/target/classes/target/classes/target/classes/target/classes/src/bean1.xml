@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="spring.User" p:name="jiang"></bean>
+
+<!--    <bean id="book" class="spring.Book">-->
+<!--        <property name="bname" value="侠客行"></property>-->
+<!--        <property name="auther" value="金庸"></property>-->
+<!--    </bean>-->
+
+    <bean id="personDao" class="spring.PersonService">
+        <property name="personDao" ref="PersonDaoImpl"></property>
+    </bean>
+    <bean id="PersonDaoImpl" class="spring.PersonDaoImpl"/>
+
+    <bean id="book" class="spring.Book">
+         <constructor-arg name="bname" value="雪中悍刀行"></constructor-arg>
+        <constructor-arg name="auther" value="烽火戏诸侯"></constructor-arg>
+    </bean>
+
+    <bean id="Book" class="spring.myBook" factory-method="createBook"/>
+
+</beans>

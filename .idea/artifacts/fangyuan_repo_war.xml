@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fangyuan-repo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>fangyuan-repo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springdemo-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="fangyuan-repo:war exploded" />
+    </root>
+  </artifact>
+</component>
